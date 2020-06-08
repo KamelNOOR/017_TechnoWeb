@@ -1,0 +1,10 @@
+SQL Database ( name : Kamel )
+
+	user : nickname(String)*, password(String), connected(Boolean), key_conn(Integer), heure_conn(Integer)
+
+	friend : user(String)*, friend(String)
+
+MongoDB 
+
+	message : Status(String), user(String), msg(String)
+	sondage : User(String), Question(String), reponse1(Integer), reponse2(Integer)

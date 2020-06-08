@@ -1,0 +1,470 @@
+{
+	"info": {
+		"_postman_id": "d4a20b2e-f674-4785-af99-7072d726ebab",
+		"name": "TechnoWeb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCreation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/UserCreation?nickname=kamel&pwd=kamel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"UserCreation"
+					],
+					"query": [
+						{
+							"key": "nickname",
+							"value": "kamel"
+						},
+						{
+							"key": "pwd",
+							"value": "kamel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/Login?nickname=kamel&pwd=kamel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"Login"
+					],
+					"query": [
+						{
+							"key": "nickname",
+							"value": "kamel"
+						},
+						{
+							"key": "pwd",
+							"value": "kamel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/Logout?nickname=kamel&pwd=kamel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"Logout"
+					],
+					"query": [
+						{
+							"key": "nickname",
+							"value": "kamel"
+						},
+						{
+							"key": "pwd",
+							"value": "kamel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddFriend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/AddFriend?user=kamel&friend=david",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"AddFriend"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "friend",
+							"value": "david"
+						}
+					]
+				},
+				"description": "( After login)"
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveFriend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/RemoveFriend?user=kamel&friend=david",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"RemoveFriend"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "friend",
+							"value": "david"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFriend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/GetFriend?user=kamel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"GetFriend"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						}
+					]
+				},
+				"description": "No friend beceause added and removed"
+			},
+			"response": []
+		},
+		{
+			"name": "AddMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/AddMessage?user=kamel&msg=\"coucou ca va\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"AddMessage"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "msg",
+							"value": "\"coucou ca va\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/GetMessage?user=kamel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"GetMessage"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/RemoveMessage?user=kamel&msg=\"coucou ca va\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"RemoveMessage"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "msg",
+							"value": "\"coucou ca va\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSondage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/AddSondage?user=kamel&question=ca%20va?&reponse1=oui&reponse2=non",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"AddSondage"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "question",
+							"value": "ca%20va?"
+						},
+						{
+							"key": "reponse1",
+							"value": "oui"
+						},
+						{
+							"key": "reponse2",
+							"value": "non"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddAnswer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/AddAnswer?user=kamel&question=ca%20va?&reponse=oui",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"AddAnswer"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "question",
+							"value": "ca%20va?"
+						},
+						{
+							"key": "reponse",
+							"value": "oui"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveAnswer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/RemoveAnswer?user=kamel&question=ca%20va?&reponse=oui",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"RemoveAnswer"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "question",
+							"value": "ca%20va?"
+						},
+						{
+							"key": "reponse",
+							"value": "oui"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveSondage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Birdy/RemoveSondage?user=kamel&question=ca%20va?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Birdy",
+						"RemoveSondage"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "kamel"
+						},
+						{
+							"key": "question",
+							"value": "ca%20va?"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

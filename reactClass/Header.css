@@ -1,0 +1,39 @@
+*{
+    padding : 0;
+    margin : 0;
+  }
+  #top {
+      background-color : black;
+      display:flex;
+      justify-content: space-between;
+    
+  }
+  
+  #logo{
+    text-align : left;
+    display:block;
+    width: 5%;
+    overflow:hidden;
+    height : 50px;
+  }
+  
+  #search{
+    margin-top: 10px;
+    height : 50px;
+    color : white;
+    display:block;
+    width: 50%;
+    
+  }
+  
+  #connect{
+    float: right;
+    display:block;
+    max-width: 24%;
+    overflow:hidden;
+  }
+
+  #logout{
+    width:200px;
+  }
+ 
